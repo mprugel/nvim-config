@@ -18,6 +18,11 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'rafamadriz/friendly-snippets'
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.4',
@@ -33,6 +38,9 @@ return require('packer').startup(function(use)
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig"
   }
+  --use 'jay-babu/mason-nvim-dap.nvim'
+  use 'mfussenegger/nvim-dap'
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
   -- use 'foo2/bar2.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
